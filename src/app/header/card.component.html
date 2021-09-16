@@ -1,0 +1,11 @@
+<div style="background-color: white;">
+    <div class="container-fluid">
+        <div class="d-flex flex-row">
+            <div *ngFor="let card of Cards;">
+                <gifts-for-cards title={{card.title}} imagePath={{card.imagePath}}>
+                    Loading card
+                </gifts-for-cards>
+            </div>
+        </div>
+    </div>
+</div>
