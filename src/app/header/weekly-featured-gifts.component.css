@@ -1,0 +1,10 @@
+/* Green Buttons in Forth Navbar */
+.button
+{
+	background-color: #d8ecd4;
+	color: black;
+	width: 130px;
+	height: 30px;
+  border:none; 
+  border-radius:20px;
+}
