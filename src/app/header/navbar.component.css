@@ -1,0 +1,12 @@
+ /* Dropdown Button */
+ .dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .nav-pills .nav-link.active {
+    background-color: #4c4c4c0c;
+  }
