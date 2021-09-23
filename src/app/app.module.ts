@@ -1,30 +1,41 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import { TopNavBarComponent } from './header/top-nav-bar.component';
-import { UserDropdownComponent } from './header/user-dropdown.component';
-import { PictureMenuComponent } from './header/picture-menu.component';
-import { WeeklyFeaturedGiftsComponent } from './header/weekly-featured-gifts.component';
-import { GiftsForCardsComponent } from './header/gifts-for-cards.component';
+import { BodyComponent } from './body/body.component';
+import { WeddingGiftsPageComponent } from './body/weddinggifts-page.component';
+import { WeddingDecorPageComponent } from './body/weddingdecor-page.component';
+import { BridesmaidGiftsPageComponent } from './body/bridesmaidgifts-page.component';
+import { PersonalizedGiftsPageComponent } from './body/personalizedgifts-page.component';
+import { JewelryPageComponent } from './body/jewelry-page.component';
+import { OnSalePageComponent } from './body/onsale-page.component';
+import { NavbarComponent } from './header/navbar.component';
+import { EtsySearchBarComponent } from './header/etsy-search-bar.component';
+import { PictureMenuComponent } from './body/picture-menu.component';
+import { TopBarComponent } from './header/topbar.component';
 import { LayoutMainComponent } from './layout/layout-main.component';
-import { GiftsCardComponent } from './body/playlist-card.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopNavBarComponent,
-    UserDropdownComponent,
+    TopBarComponent,
+    WeddingGiftsPageComponent,
+    WeddingDecorPageComponent,
+    BridesmaidGiftsPageComponent,
+    PersonalizedGiftsPageComponent,
+    JewelryPageComponent,
+    OnSalePageComponent,
+    NavbarComponent,
+    EtsySearchBarComponent,
     PictureMenuComponent,
-    WeeklyFeaturedGiftsComponent,
-    GiftsForCardsComponent,
-    LayoutMainComponent,
-    GiftsCardComponent
+    BodyComponent,
+    LayoutMainComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
