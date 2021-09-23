@@ -1,0 +1,8 @@
+/* round images in third navbar */
+.round-images{
+    border-radius: 50%;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #4c4c4c0c;
+}
