@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { AppComponent } from './app.component';
 import { BodyComponent } from './body/body.component';
 import { WeddingGiftsPageComponent } from './body/weddinggifts-page.component';
@@ -15,6 +16,8 @@ import { TopBarComponent } from './header/topbar.component';
 import { LayoutMainComponent } from './layout/layout-main.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './body/list.component';
+import { ProductCardComponent } from './body/productCard.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     EtsySearchBarComponent,
     PictureMenuComponent,
     BodyComponent,
+    CardComponent,
+    ProductCardComponent,
     LayoutMainComponent
   ],
   imports: [
