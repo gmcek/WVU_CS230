@@ -15,9 +15,10 @@ import { PictureMenuComponent } from './body/picture-menu.component';
 import { TopBarComponent } from './header/topbar.component';
 import { LayoutMainComponent } from './layout/layout-main.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './body/list.component';
 import { ProductCardComponent } from './body/productCard.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './header/user-info.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ProductCardComponent } from './body/productCard.component';
     BodyComponent,
     CardComponent,
     ProductCardComponent,
-    LayoutMainComponent
+    LayoutMainComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
