@@ -1,14 +1,12 @@
-import { Component, Input } from "@angular/core";
+export class Card {
+    title:string;
+    description: string;
+    imagePath: string;
 
-@Component({
-    selector: "etsy-card",
-    templateUrl: "list.component.html"
-})
-export class CardComponent {
-    @Input() 
-    title! :string;
-    @Input()
-    description! :string;
-    @Input()
-    imagePath!: string;
+    constructor({title, description, imagePath} : 
+        {title:string, description:string, imagePath:string}){
+            this.title = title;
+            this.description = description;
+            this.imagePath = imagePath;
+    }
 }

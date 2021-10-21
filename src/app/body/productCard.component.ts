@@ -5,10 +5,7 @@ import { Component, Input } from "@angular/core";
     templateUrl: "productCard.component.html"
 })
 export class ProductCardComponent {
-    @Input() 
-    title! :string;
-    @Input()
-    description! :string;
-    @Input()
-    imagePath!: string;
+    @Input() title! :string;
+    @Input() description! :string;
+    @Input() imagePath!: string;
 }
