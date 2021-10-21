@@ -15,10 +15,12 @@ import { PictureMenuComponent } from './body/picture-menu.component';
 import { TopBarComponent } from './header/topbar.component';
 import { LayoutMainComponent } from './layout/layout-main.component';
 import { AppRoutingModule } from './app-routing.module';
-import { CardComponent } from './body/list.component';
+import { listComponent } from './body/list.component';
 import { ProductCardComponent } from './body/productCard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
+import { TestListComponent } from './body/list-test.component';
+import { TestProductCardComponent } from './body/productCard-test.component';
 
 @NgModule({
   declarations: [
@@ -34,10 +36,12 @@ import { UserInfoComponent } from './header/user-info.component';
     EtsySearchBarComponent,
     PictureMenuComponent,
     BodyComponent,
-    CardComponent,
+    listComponent,
     ProductCardComponent,
     LayoutMainComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    TestListComponent,
+    TestProductCardComponent
   ],
   imports: [
     BrowserModule,
