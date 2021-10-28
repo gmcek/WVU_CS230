@@ -1,0 +1,16 @@
+<p *ngIf="signin == undefined">Failed fetching sign in info</p>
+<div *ngIf="signin != undefined">
+    <div class="container-fluid">
+        <div class="d-flex flex-row justify-content-between">
+            <div class="flex-column">
+                Email address: {{signin.EmailAddress}}
+            </div>
+            <div class="flex-column">
+                First name: {{signin.FirstName}}
+            </div>
+            <div class="flex-column">
+                Password: {{signin.Password}}
+            </div>
+        </div>
+    </div>
+</div>

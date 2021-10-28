@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div class="d-flex flex-row justify-content-between">
+            <form #postForm="ngForm" (ngSubmit)="onUpdateSignInInfo(postForm.value)">
+                <div class="input-group">
+                    <span class="input-group-text">Email address</span>
+                    <input type="text" class="form-control" ngModel name="EmailAddress">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">First name</span>
+                    <input type="text" class="form-control" ngModel name="FirstName">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">Password</span>
+                    <input type="text" class="form-control" ngModel name="Password">
+                </div>
+                <p style="font-family:cambria; color:white; font-size:10px;">Filler space</p>
+                <button class="btn btn-white" style="background-color: #fd7e14; color: white; border: none;" type="submit">
+                    Register
+                </button>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
