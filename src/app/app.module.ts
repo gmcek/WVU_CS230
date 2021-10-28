@@ -21,6 +21,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
 import { TestListComponent } from './body/list-test.component';
 import { TestProductCardComponent } from './body/productCard-test.component';
+import { FormsModule } from '@angular/forms';
+import { EditSignInInfoComponent } from './header/edit-sign-in-info.component';
+import { SignInInfoComponent } from './header/sign-in-info.component';
+import { EditLoginInfoComponent } from './header/edit-login-info.component';
+import { LoginInfoComponent } from './header/login-info.component';
 
 @NgModule({
   declarations: [
@@ -41,12 +46,17 @@ import { TestProductCardComponent } from './body/productCard-test.component';
     LayoutMainComponent,
     UserInfoComponent,
     TestListComponent,
-    TestProductCardComponent
+    TestProductCardComponent,
+    EditSignInInfoComponent,
+    SignInInfoComponent,
+    EditLoginInfoComponent,
+    LoginInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
