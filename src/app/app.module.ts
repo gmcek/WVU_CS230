@@ -26,6 +26,10 @@ import { EditSignInInfoComponent } from './header/edit-sign-in-info.component';
 import { SignInInfoComponent } from './header/sign-in-info.component';
 import { EditLoginInfoComponent } from './header/edit-login-info.component';
 import { LoginInfoComponent } from './header/login-info.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -56,7 +60,12 @@ import { LoginInfoComponent } from './header/login-info.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase()),
+    AngularFireModule.initializeApp(environment.firebase, 'etsy-app'),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase())
   ],
   providers: [],
   bootstrap: [AppComponent]
