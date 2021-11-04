@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { SignInInfo } from "./sign-in-info.model";
 import { SignInInfoService } from "./sign-in-info.service";
+import { DatabaseService } from "./database.service";
 
 @Component({
     selector: 'etsy-edit-sign-in-info',
@@ -8,8 +9,8 @@ import { SignInInfoService } from "./sign-in-info.service";
 })
 export class EditSignInInfoComponent {
 
-    constructor(private signInInfoService: SignInInfoService) {
-
+    constructor(private signInInfoService: SignInInfoService, private dbService:DatabaseService) {
+        dbService.showData();
     }
 
     onUpdateSignInInfo(data:SignInInfo) {
