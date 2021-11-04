@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "etsy-app-4d3b6": {
+      "hosting": {
+        "etsy-app": [
+          "etsy-app-4d3b6"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "etsy-app-4d3b6"
+  }
+}
