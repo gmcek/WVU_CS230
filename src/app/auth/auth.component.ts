@@ -22,7 +22,7 @@ export class AuthComponent {
         if (this.buttonClicked == 'SignUp') {
             this.authObservable = this.authService.signup(data.value.email, data.value.password);
         }
-        if (this.buttonClicked == 'Login') {
+        else (this.buttonClicked == 'Login') {
             this.authObservable = this.authService.login(data.value.email, data.value.password);
         }
         
